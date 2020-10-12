@@ -171,6 +171,8 @@ let g:session_autoload = "no"
 let g:session_autosave = "no"
 let g:session_command_aliases = 1
 
+
+
 "*****************************************************************************
 "" Visual Settings
 "*****************************************************************************
@@ -181,6 +183,12 @@ set number
 let no_buffers_menu=1
 colorscheme codedark
 
+" Highlight 80 char column
+highlight ColorColumn ctermbg=magenta
+set colorcolumn=81
+" Replace colorcolumn=81 with the follwing line to only show when more than 80
+" chars: 
+" call matchadd('ColorColumn', '\%81v', 100)
 
 set mousemodel=popup
 set t_Co=256
