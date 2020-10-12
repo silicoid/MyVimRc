@@ -19,13 +19,26 @@ To get a list of the installed plugins and their status:
 
 ## Navigation
 
+```
 <F3> Open and close the tree navigation
 <CTRL + w> (twice) will switch betwen the tree navigation and the edit window.
-  
+```
 You will see the list of open buffers on the top left. To switch between buffers
+```
 :b <buffername> 
   or
-:b <number> (2 is usually the navigation tree. Which means 1, 3, 4, 5 are your actual buffers
+:b <number> (2 is usually the navigation tree. Which means 1, 3, 4, 5 are your actual buffers)
+```
 
-To get a list of the buffers with their numbers:
+To get a list of the buffers with their numbers
+
 :buffers
+
+The .vimrc also defines a leader key "," that can is combined with several shortcuts
+```
+<LEADER>q  Previous buffer
+<LEADER>z  Previous buffer
+<LEADER>w  Next buffer
+<LEADER>x  Next buffer
+<LEADER>c  Close/delete buffer
+```
